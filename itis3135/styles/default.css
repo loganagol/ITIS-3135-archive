@@ -14,6 +14,7 @@ body {
 
 nav {
   background-color: #370617;
+  text-align: center;
 }
 
 header,
@@ -49,12 +50,10 @@ a:hover {
 
 figure {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption {
   font-style: italic;
-}
-
-nav {
-  text-align: center;
 }
