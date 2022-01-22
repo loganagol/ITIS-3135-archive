@@ -2,60 +2,55 @@
  https://coolors.co/palette/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08
 */
 
-body
-{
-	font-family: 'Courier New', Courier, monospace;
-	color: E85D04;
-	background-color: 03071E;
-
-	margin-left: 150px;
-	margin-right: 150px;
-}
-
-header, footer
-{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-align: center;
-}
-
-main
-{
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-h1, h2, h3
-{
-	font-family: 'Courier New', Courier, monospace;
-	text-align: center;
-	line-height: 0px;
-}
-
-a
-{
-	text-decoration: none;
-	color: FAA307;
-	font-weight: bold;
-}
-
-a:hover
-{
-	text-decoration: underline;
-	color: F48C06;
-}
-
-figure
-{
-	text-align: center;
-}
-
-figcaption
-{
-	font-style: italic;
-}
-
-nav
-{
-	text-align: center;
-}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFBA08;
+    background-color: #03071E;
+  
+    margin-left: 125px;
+    margin-right: 125px;
+  }
+  
+  header,
+  footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  main {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 0px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #E85D04;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #D00000;
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  figcaption {
+    font-style: italic;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
