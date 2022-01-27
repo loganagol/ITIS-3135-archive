@@ -58,8 +58,9 @@ figcaption {
   font-style: italic;
 }
 
-table{
+table, th, td{
   margin:auto;
+  border: 1px solid #ffba08;
 }
 
 table tr:nth-child(even) {
