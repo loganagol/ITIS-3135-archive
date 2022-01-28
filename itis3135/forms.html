@@ -29,46 +29,36 @@
     <main>
       <h2>Forms</h2>
       <form action="#">
-        <label for="name">
-          Name:
+        <div class="label-row">
+          <label for="name">Name:</label>
           <input id="name" type="text" required />
-        </label>
-        <br />
-        <label for="phone">
-          Phone #:
-          <input id="phone" type="tel" size="10" placeholder="0001112222" />
-        </label>
-        <br />
-        <label for="email">
-          Email:
+        </div>
+        <div class="label-row">
+          <label for="phone">Phone number:</label>
+          <input id="phone" type="tel" placeholder="1112223333" size="10" />
+        </div>
+        <div class="label-row">
+          <label for="email">Email Address:</label>
           <input id="email" type="email" />
-        </label>
-        <br />
-        <label for="club-sports">
-          Sports Club:
-          <input
-            id="club-sports"
-            value="sports"
-            type="checkbox"
-            name="sports-C3"
-          />
-        </label>
-        <label for="club-c3">
-          C3 Club:
-          <input id="club-c3" value="c3" type="checkbox" name="sports-C3" />
-        </label>
-        <br />
-        <label for="oncamp">
-          On Campus:
-          <input id="oncamp" value="oncamp" type="radio" name="on-off-camp" />
-        </label>
-        <label>
-          Off Campus:
-          <input id="offcamp" value="offcamp" type="radio" name="on-off-camp" />
-        </label>
-        <br />
-        <label for="states">
-          States Visited:
+        </div>
+        <div class="label-row">
+          <label for="club-sports">Sports Club:</label>
+          <input id="club-sports" type="checkbox" value="sports" />
+        </div>
+        <div class="label-row">
+          <label for="club-computing">Computing Club:</label>
+          <input id="club-computing" type="checkbox" value="computing" />
+        </div>
+        <div class="label-row">
+          <label for="oncamp">On Campus:</label>
+          <input id="oncamp" type="radio" value="oncamp" name="on-off-camp" />
+        </div>
+        <div class="label-row">
+          <label for="offcamp">Off Campus:</label>
+          <input id="offcamp" type="radio" value="offcamp" name="on-off-camp" />
+        </div>
+        <div class="label-row">
+          <label for="states">Favorite State:</label>
           <select name="states" id="states">
             <option value="nc">NC</option>
             <option value="sc">SC</option>
@@ -77,10 +67,11 @@
             <option value="ut">UT</option>
             <option value="nv">NV</option>
           </select>
-        </label>
-        <br />
-        <input type="reset" />
-        <input type="submit" />
+        </div>
+        <div class="label-row">
+          <input type="reset" />
+          <input type="submit" />
+        </div>
       </form>
     </main>
 

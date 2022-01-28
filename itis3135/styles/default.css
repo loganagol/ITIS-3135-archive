@@ -88,8 +88,13 @@ form {
   padding: 20px;
 }
 
-label {
+.label-row {
   display: table-row;
+}
+
+label {
+  display: table-cell;
+  padding-right: 10px;
 }
 
 input {
