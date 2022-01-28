@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link href="styles/default.css" rel="stylesheet" type="text/css" />
-    <title>Logan Feid &loz; ITIS3135 Contract</title>
+    <title>Logan Feid &loz; ITIS3135 Forms</title>
   </head>
 
   <body>
@@ -27,31 +27,61 @@
     </header>
 
     <main>
-      <h2>Contract</h2>
-      <p>
-        I, <a href="introduction.html">Logan A. Feid</a> agree to abide by the
-        terms of the course contract in my Spring 2022, ITIS3135, Web
-        Application Design and Development with my instructor, Professor D.I.
-        von Briesen.
-      </p>
-      <p>
-        I understand that all work that I do on publicly available online tools
-        will be available to the world, and will not put information there that
-        is inappropriate for schoolwork, or that I wish to keep private.
-      </p>
-      <p>
-        I also understand that it is my work that counts for attendance, not
-        logins or showing up for class. As such, failure to turn in assignments
-        may show as absences.
-      </p>
-      <p>
-        I also understand that given the structure and content of this class
-        it’s possible to find many examples online or even view my classmates’
-        code directly. I swear that I will only use these resources to learn,
-        and will not cut and paste code except where I have properly given
-        credit (i.e. external libraries) and never from my classmates.
-      </p>
-      <p>Signed: <em>Logan A. Feid</em> , 22/01/2022</p>
+      <h2>Forms</h2>
+      <form action="#">
+        <label for="name">
+          Name:
+          <input id="name" type="text" required />
+        </label>
+        <br />
+        <label for="phone">
+          Phone #:
+          <input id="phone" type="tel" size="10" placeholder="0001112222" />
+        </label>
+        <br />
+        <label for="email">
+          Email:
+          <input id="email" type="email" />
+        </label>
+        <br />
+        <label for="club-sports">
+          Sports Club:
+          <input
+            id="club-sports"
+            value="sports"
+            type="checkbox"
+            name="sports-C3"
+          />
+        </label>
+        <label for="club-c3">
+          C3 Club:
+          <input id="club-c3" value="c3" type="checkbox" name="sports-C3" />
+        </label>
+        <br />
+        <label for="oncamp">
+          On Campus:
+          <input id="oncamp" value="oncamp" type="radio" name="on-off-camp" />
+        </label>
+        <label>
+          Off Campus:
+          <input id="offcamp" value="offcamp" type="radio" name="on-off-camp" />
+        </label>
+        <br />
+        <label for="states">
+          States Visited:
+          <select name="states" id="states">
+            <option value="nc">NC</option>
+            <option value="sc">SC</option>
+            <option value="ga">GA</option>
+            <option value="fl">FL</option>
+            <option value="ut">UT</option>
+            <option value="nv">NV</option>
+          </select>
+        </label>
+        <br />
+        <input type="reset" />
+        <input type="submit" />
+      </form>
     </main>
 
     <footer>

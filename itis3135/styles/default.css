@@ -58,15 +58,40 @@ figcaption {
   font-style: italic;
 }
 
-table, th, td{
-  margin:auto;
+table {
+  margin: auto;
   border: 1px solid #ffba08;
 }
 
+th,
+td {
+  border: 1px solid #ffba08;
+  text-align: left;
+  padding: 5px;
+}
+
 table tr:nth-child(even) {
-  background-color: #370617;
+  background-color: #6a040f;
 }
 
 table tr:nth-child(1) {
-  background-color: #6A040F;
-} 
+  background-color: #ffba08;
+  color: #03071e;
+}
+
+form {
+  background-color: #ffba08;
+  color: #03071e;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+label {
+  display: table-row;
+}
+
+input {
+  display: table-cell;
+}
