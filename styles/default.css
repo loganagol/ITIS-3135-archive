@@ -60,7 +60,12 @@ figure {
   margin-right: auto;
 }
 
-.img-rotate {
+.ascii {
+  font-family: monospace;
+  white-space: pre;
+}
+
+/* .img-rotate {
   animation: rotation 8s linear infinite;
   border: 5px groove #ffba08;
   border-radius: 50%;
@@ -78,4 +83,4 @@ figure {
     transform: rotate(359deg);
     scale: 1.0;
   }
-}
+} */
