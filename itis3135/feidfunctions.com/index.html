@@ -2,10 +2,6 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-    /> -->
     <title>Feid Functions &loz; Home</title>
     <style>
       /**
@@ -24,12 +20,14 @@
       nav {
         background-color: #f48c06;
         text-align: center;
+        padding: 10px;
+        border: 1px solid #6a040f;
       }
       header,
       footer {
         margin-top: 50px;
         margin-bottom: 50px;
-        text-align: center;
+        /* text-align: center; */
       }
       main {
         margin-left: 100px;
@@ -40,7 +38,6 @@
       h3 {
         font-family: Helvetica, sans-serif;
         text-align: center;
-        line-height: 0px;
       }
       a {
         text-decoration: none;
@@ -51,34 +48,144 @@
         text-decoration: underline;
         color: #d00000;
       }
-      figure {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+      hr {
+        border-color: #6a040f;
       }
-      figcaption {
-        font-style: italic;
+      .banner-top {
+        display: flex;
+        /* border: 5px solid black; */
+        align-content: center;
+        justify-content: center;
+      }
+
+      .banner-top-h1 {
+        /* border: 5px solid black; */
+        justify-self: right;
+        align-self: center;
+        padding: 10px;
+      }
+
+      .banner-top-img {
+        /* border: 1px solid black; */
+        border-radius: 19%;
+        align-self: center;
+        justify-self: center;
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .funfacts {
+        list-style-type: square;
+      }
+
+      .contact {
+        list-style-type: none;
       }
     </style>
   </head>
 
   <body>
     <header>
-      <h1>Feid Functions</h1>
+      <div class="banner-top">
+        <h1 class="banner-top-h1">Feid Functions</h1>
+        <img
+          class="banner-top-img"
+          id="logo"
+          src="../images/lemonfish2.png"
+          alt="logo"
+        />
+      </div>
       <nav>
         <a href="index.html">Home</a>
       </nav>
     </header>
 
     <main>
-      <h2>Home</h2>
-      <p>Welcome to the index page for Feid Functions.</p>
+      <h2>Feid Functions' Services</h2>
+      <p>
+        Welcome to Lemon Fish Limited, purveyour of all your adjective-animal
+        based needs. Founded in 50 BC, we've been around for a long time. That's
+        how you know we're quality. What do we do? That's a fantastic question!
+        We wake up every morning and ask ourselves the same question. The world
+        is an unceasing nightmare and we can't wake up. Our company will always
+        be here for you, though. As long as crossroads exist in the world, we
+        will have an open office and complimentary coffee. We've been providing
+        quality immortality to the human race since it's cursed secret was first
+        discovered.
+      </p>
+      <ul class="funfacts">
+        <li>
+          Our company was founded by Liu Xin, the best scholar of the Western
+          Han Dynasty!
+        </li>
+        <li>
+          Our founder was chosen by destiny to provide low-cost and reliable
+          immortality to select members of the human race.
+        </li>
+        <li>
+          Fish weren't real before we came along! We made them up and they were
+          an instant hit.
+        </li>
+        <li>
+          Milk and blood both spontaneously boil when in the presence of our
+          company charter. That's spicy!
+        </li>
+        <li>
+          You could be a part of our company without being aware of it. All our
+          employees are bound by fate to complete their tasks.
+        </li>
+        <li>
+          You may find millenia have passed once you've finished reading this.
+          If you're still in the present day, please contact our customer
+          service to have your time removed free of charge!
+        </li>
+      </ul>
+      <p>
+        We've outlasted empires and will outlive the immortal kings of our dark
+        future. Contact us today for a free consultation! Let us help you endure
+        past all human endurance. We would like to prolong your life until every
+        sensation fades and thought becomes a ceaseless and eternal wail.
+      </p>
+      <ul class="contact">
+        <li>Email: outreach@lemonfish.com</li>
+        <li>Phone: 919-100-1001</li>
+        <li>Address: 911 Reems Creek Rd, Weaverville, NC 28787</li>
+      </ul>
     </main>
 
     <footer>
-      <em>Our functions are fabulous!</em>
-      <br />
-      Feid Functions &copy; 2022
+      <hr />
+      Page created by <a href="feidfunctions.com/">Feid Functions</a> &copy;
+      2022
+      <p>
+        <a
+          href="https://validator.w3.org/check?uri=referer"
+          style="text-decoration: none"
+        >
+          <img
+            src="../images/button_validation_html5.png"
+            width="88"
+            height="31"
+            alt="Link to HTML validator"
+          />
+        </a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/check/referer"
+          style="text-decoration: none"
+        >
+          <img
+            src="../images/button_validation_css.png"
+            width="88"
+            height="31"
+            alt="Link to CSS validator"
+          />
+        </a>
+      </p>
     </footer>
   </body>
 </html>
