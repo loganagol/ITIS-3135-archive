@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" />
+    <title>Logan Feid &loz; ITIS3135 &loz; Lemon Fish &loz; First JS</title>
+    <script src="scripts/defaultscripts.js"></script>
+  </head>
+
+  <body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+      <h2>First JS</h2>
+      <br />
+      <h3 id="date-and-time">Placeholder for date and time.</h3>
+      <br />
+      <form id="form1" name="form1">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Frank Franklin" />
+        <label for="mood">How are you feeling: </label>
+        <input type="text" id="mood" placeholder="Feelin' Frank" />
+      </form>
+      <input type="submit" value="Submit" onclick="makeGreeting();" />
+      <br />
+
+      <div class="fivebuttons">
+        <button id="insult">Get an Insult</button>
+        <button id="whois">Who is Liu Xin</button>
+        <button id="alternatives">Display Lemon Fish Alternatives</button>
+        <button id="employ-check">Am I already an employee?</button>
+        <button id="life">Add 100 Years to Natural Lifespan</button>
+      </div>
+      <!-- <button onclick="todaysDate();">Run scriptTest()</button> -->
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/htmlinclude.js"></script>
+  </body>
+</html>
