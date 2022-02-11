@@ -4,12 +4,12 @@ function scriptTest() {
 
 // Displays the time, day of week, and date (i.e. Today is 3:53pm on Wednesday, 3 November, 2027)
 function todaysDate() {
-  var today = new Date();
+  let today = new Date();
 
-  var hours = today.getHours();
-  var minutes = today.getMinutes();
+  let hours = today.getHours();
+  let minutes = today.getMinutes();
 
-  var meridian;
+  let meridian;
   if (hours > 12 && hours < 24) {
     hours = hours % 12;
     meridian = "pm";
@@ -22,18 +22,18 @@ function todaysDate() {
     meridian = "am";
   }
 
-  var weekdays = [
+  let weekdays = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
-  var weekday = weekdays[today.getDay()];
+  let weekday = weekdays[today.getDay()];
 
-  var months = [
+  let months = [
     "January",
     "February",
     "March",
@@ -47,7 +47,7 @@ function todaysDate() {
     "November",
     "December",
   ];
-  var month = months[today.getMonth()];
+  let month = months[today.getMonth()];
 
   let message =
     "Today is " +
@@ -69,9 +69,9 @@ function todaysDate() {
 todaysDate();
 
 function makeGreeting() {
-  var company = "Lemon Fish";
-  var name = $("name").value;
-  var mood = $("mood").value;
+  let company = "Lemon Fish";
+  let name = document.getElementById("name").value;
+  let mood = document.getElementById("mood").value;
   let message =
     "The " +
     company +
@@ -80,5 +80,58 @@ function makeGreeting() {
     "! We're overjoyed that you're " +
     mood +
     "!";
-  alert(message);
+  document.getElementById("greeting").innerHTML = message;
+}
+
+function getInsult() {
+  let i = Math.floor(Math.random() * 5);
+  let insults = [
+    "Your mother was a hamster!",
+    "Your father smelled of elderberries!",
+    "You were the chosen one, you were supposed to bring balance to the force!",
+    "You six-piece chicken McNobody.",
+    "Does Barry Manilow know you raid his wardrobe?",
+  ];
+  let insult = insults[i];
+  document.getElementById("button-results").innerHTML = insult;
+}
+
+function getFounderInfo() {
+  let founderBio =
+    "Liu Xin was the son of Confucian scholar Liu Xiang (77 – 6 BCE). Liu was a distant relative of Liu Bang, the founder of the Han dynasty, and was thus a member of the ruling dynastic clan (the Liu family). Liu Xin's paternal grandfather ranked as a marquess.[3]";
+  document.getElementById("button-results").innerHTML = founderBio;
+}
+
+function getAlternatives() {
+  let adjectives = [
+    "Lackadaisical",
+    "Lackluster",
+    "Lame",
+    "Large",
+    "Languid",
+    "Latent",
+    "Lavish",
+    "Lawful",
+    "Lifeless",
+    "Leaden",
+  ];
+  let nouns = ["Falcon", "Ferret", "Fennec Fox", "Firefly", "Flamingo"];
+  let alternatives = "";
+
+  for (let k = 0; k < 10; k++) {
+    let i = Math.floor(Math.random() * 10);
+    let j = Math.floor(Math.random() * 5);
+    alternatives += adjectives[i] + " " + nouns[j] + "<br />";
+  }
+  document.getElementById("button-results").innerHTML = alternatives;
+}
+
+function getEmployStatus() {
+  document.getElementById("button-results").innerHTML =
+    "You are now employed with us. This cannot be undone. Please direct all complaints to our Human Resources department. Welcome aboard!";
+}
+
+function rejectMortality() {
+  document.body.style.background = "#DC2F02";
+  document.getElementById("button-results").innerHTML = "<h4>IT IS DONE</h4>"
 }
