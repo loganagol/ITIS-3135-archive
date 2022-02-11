@@ -8,6 +8,9 @@ function todaysDate() {
 
   let hours = today.getHours();
   let minutes = today.getMinutes();
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
 
   let meridian;
   if (hours > 12 && hours < 24) {
