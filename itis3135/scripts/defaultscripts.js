@@ -69,6 +69,7 @@ function todaysDate() {
 todaysDate();
 
 function makeGreeting() {
+  document.body.style.background = "#03071E";
   let company = "Lemon Fish";
   let name = document.getElementById("name").value;
   let mood = document.getElementById("mood").value;
@@ -77,18 +78,19 @@ function makeGreeting() {
     company +
     " welcomes you, " +
     name +
-    "! We're overjoyed that you're " +
+    "! We're overjoyed that you're feeling " +
     mood +
     "!";
   document.getElementById("greeting").innerHTML = message;
 }
 
 function getInsult() {
+  document.body.style.background = "#03071E";
   let i = Math.floor(Math.random() * 5);
   let insults = [
     "Your mother was a hamster!",
     "Your father smelled of elderberries!",
-    "You were the chosen one, you were supposed to bring balance to the force!",
+    "Your brain is full of unwashed socks, your soul is full of gunk.",
     "You six-piece chicken McNobody.",
     "Does Barry Manilow know you raid his wardrobe?",
   ];
@@ -97,12 +99,14 @@ function getInsult() {
 }
 
 function getFounderInfo() {
+  document.body.style.background = "#03071E";
   let founderBio =
     "Liu Xin was the son of Confucian scholar Liu Xiang (77 – 6 BCE). Liu was a distant relative of Liu Bang, the founder of the Han dynasty, and was thus a member of the ruling dynastic clan (the Liu family). Liu Xin's paternal grandfather ranked as a marquess.[3]";
   document.getElementById("button-results").innerHTML = founderBio;
 }
 
 function getAlternatives() {
+  document.body.style.background = "#03071E";
   let adjectives = [
     "Lackadaisical",
     "Lackluster",
@@ -127,11 +131,12 @@ function getAlternatives() {
 }
 
 function getEmployStatus() {
+  document.body.style.background = "#03071E";
   document.getElementById("button-results").innerHTML =
     "You are now employed with us. This cannot be undone. Please direct all complaints to our Human Resources department. Welcome aboard!";
 }
 
 function rejectMortality() {
-  document.body.style.background = "#DC2F02";
-  document.getElementById("button-results").innerHTML = "<h4>IT IS DONE</h4>"
+  document.body.style.background = "#6A040F";
+  document.getElementById("button-results").innerHTML = "<h3>IT IS DONE</h3>";
 }
