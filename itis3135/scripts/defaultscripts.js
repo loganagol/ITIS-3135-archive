@@ -135,8 +135,18 @@ function getAlternatives() {
 
 function getEmployStatus() {
   document.body.style.background = "#03071E";
-  document.getElementById("button-results").innerHTML =
-    "You are now employed with us. This cannot be undone. Please direct all complaints to our Human Resources department. Welcome aboard!";
+  let myinput = prompt(
+    "Do you wish for unceasing service to the Lemon Fish? (yes/no)"
+  );
+  let callback = "";
+  if (myinput == "yes") {
+    callback =
+      "You are now employed with us. This cannot be undone. Please direct all complaints to our Human Resources department. Welcome aboard!";
+  } else {
+    callback =
+      "There is no choice. You were destined to carry out the whims of fate since birth. Embrace the Fish.";
+  }
+  document.getElementById("button-results").innerHTML = callback;
 }
 
 function rejectMortality() {
