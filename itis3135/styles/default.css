@@ -138,3 +138,17 @@ label[for="name"] {
 #fivebuttons button {
   background-color: #ffba08;
 }
+
+.calculator {
+  border: 2px #dc2f02 solid;
+} 
+
+.key-equal {
+  grid-area: 2/4/6/5;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  background:#6a040f;
+}
