@@ -141,7 +141,13 @@ label[for="name"] {
 
 .calculator {
   border: 2px #dc2f02 solid;
-} 
+}
+
+.calculator-display {
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
+}
 
 .key-equal {
   grid-area: 2/4/6/5;
@@ -150,5 +156,5 @@ label[for="name"] {
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  background:#6a040f;
+  background: #6a040f;
 }
