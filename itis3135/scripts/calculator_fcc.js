@@ -78,6 +78,17 @@ keys.addEventListener("click", (e) => {
     if (action === "clear") {
       console.log("CLEAR KEY");
 
+      if (key.textContent === "AC") {
+        calculator.dataset.firstValue = "";
+        calculator.dataset.modValue = "";
+        calculator.dataset.operator = "";
+        calculator.dataset.previousKeyType = "";
+      } else {
+        key.textContent = "AC";
+      }
+
+      display.textContent = 0;
+
       calculator.dataset.previousKeyType = "clear";
     }
     if (action === "calculate") {
@@ -97,6 +108,10 @@ keys.addEventListener("click", (e) => {
 
       calculator.dataset.modValue = secondValue;
       calculator.dataset.previousKeyType = "calculate";
+    }
+    if (action !== "clear") {
+      const clearButton = calculator.querySelector("[data-action=clear]");
+      clearButton.textContent = "CE";
     }
   }
 });
