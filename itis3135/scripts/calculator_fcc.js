@@ -10,6 +10,7 @@ const display = document.querySelector(".calculator-display");
 keys.addEventListener("click", (e) => {
   if (e.target.matches("button")) {
     // console.log("BUTTON WAS CLICKED");
+
     const key = e.target;
     const action = key.dataset.action;
     const keyContent = key.textContent;
@@ -21,15 +22,18 @@ keys.addEventListener("click", (e) => {
     if (!action) {
       console.log("NUMBER KEY");
 
-      if (displayedNum === "0" || previousKeyType === "operator") {
+      if (
+        displayedNum === "0" ||
+        previousKeyType === "operator" ||
+        previousKeyType === "calculate"
+      ) {
         display.textContent = keyContent;
-
-        calculator.dataset.firstValue = displayedNum;
       } else {
         display.textContent = displayedNum + keyContent;
       }
       calculator.dataset.previousKeyType = "number";
     }
+
     if (
       action === "add" ||
       action === "subtract" ||
@@ -42,15 +46,24 @@ keys.addEventListener("click", (e) => {
       const operator = calculator.dataset.operator;
       const secondValue = displayedNum;
 
-      if (firstValue && operator && previousKeyType != "operator") {
+      if (
+        firstValue &&
+        operator &&
+        previousKeyType != "operator" &&
+        previousKeyType !== "calculate"
+      ) {
         const calcValue = calculate(firstValue, operator, secondValue);
+
         display.textContent = calcValue;
+        calculator.dataset.firstValue = calcValue;
+      } else {
+        calculator.dataset.firstValue = displayedNum;
       }
 
-      calculator.dataset.firstValue = displayedNum;
       calculator.dataset.operator = action;
       calculator.dataset.previousKeyType = "operator";
     }
+
     if (action === "decimal") {
       console.log("DECIMAL KEY");
 
@@ -59,6 +72,7 @@ keys.addEventListener("click", (e) => {
       } else if (previousKeyType === "operator") {
         display.textContent = "0.";
       }
+
       calculator.dataset.previousKeyType = "decimal";
     }
     if (action === "clear") {
@@ -73,7 +87,10 @@ keys.addEventListener("click", (e) => {
       const operator = calculator.dataset.operator;
       const secondValue = displayedNum;
 
-      display.textContent = calculate(firstValue, operator, secondValue);
+      if (firstValue) {
+        display.textContent = calculate(firstValue, operator, secondValue);
+      }
+
       calculator.dataset.previousKeyType = "calculate";
     }
   }
