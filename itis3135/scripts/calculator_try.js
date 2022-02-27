@@ -27,22 +27,41 @@ buttons.addEventListener("click", (e) => {
       } else {
         displayNumber += number;
       }
-      display.textContent = displayNumber;
     }
-    if (operation) {
-      // UNARY OPERATOR
-      if (operation === "decimal") {
-        if (!displayNumber.includes(".")) {
-          displayNumber = displayNumber + ".";
-        }
+    // UNARY OPERATOR
+    if (operation === "decimal") {
+      if (!displayNumber.includes(".")) {
+        displayNumber = displayNumber + ".";
       }
-      //UNARY OPERATOR
-      if (operation === "negative" && displayNumber !== "0") {
-        if (!displayNumber.includes("-")) {
-          displayNumber = "-" + displayNumber;
-        }
-      }
-      display.textContent = displayNumber; // write unary operation
     }
+    //UNARY OPERATOR
+    if (operation === "negative" && displayNumber !== "0") {
+      if (!displayNumber.includes("-")) {
+        displayNumber = "-" + displayNumber;
+      } else {
+          displayNumber = displayNumber.slice(1);
+      }
+    }
+    // This concludes operations that can be performed on a single number.
+
+    if (operation === "add") {
+      displayNumber += "+";
+    } else if (operation === "subtract") {
+      displayNumber += "-";
+    } else if (operation === "multiply") {
+      displayNumber += "*";
+    } else if (operation === "divide") {
+      displayNumber += "/";
+    }
+
+    if (operation === "calculate") {
+      displayNumber = eval(displayNumber);
+      // As a security student, I know eval() is very evil and should never be used.
+    }
+
+    if (operation === "clear") {
+      displayNumber = "0";
+    }
+    display.textContent = displayNumber;
   }
 });
