@@ -150,9 +150,12 @@ label[for="name"] {
   font-size: larger;
 }
 
-.button-calculate,
 .key-equal {
   grid-area: 2/4/6/5;
+}
+
+.button-calculate {
+  grid-area: 2/4/5/5;
 }
 
 .calculator-buttons,

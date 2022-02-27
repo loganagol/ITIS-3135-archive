@@ -2,6 +2,7 @@
  * References:
  *      https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
  *      https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/
+ *      https://careerkarma.com/blog/javascript-string-contains/
  */
 
 const calculator = document.querySelector(".calculator");
@@ -16,16 +17,32 @@ buttons.addEventListener("click", (e) => {
     const button = e.target;
 
     const number = button.dataset.number;
+    const operation = button.dataset.operation;
 
     if (number) {
+      console.log("! number keypress");
+
       if (displayNumber === "0") {
-        display.textContent = number;
         displayNumber = number;
       } else {
-        console.log("BRANCH");
-        display.textContent += number;
         displayNumber += number;
       }
+      display.textContent = displayNumber;
+    }
+    if (operation) {
+      // UNARY OPERATOR
+      if (operation === "decimal") {
+        if (!displayNumber.includes(".")) {
+          displayNumber = displayNumber + ".";
+        }
+      }
+      //UNARY OPERATOR
+      if (operation === "negative" && displayNumber !== "0") {
+        if (!displayNumber.includes("-")) {
+          displayNumber = "-" + displayNumber;
+        }
+      }
+      display.textContent = displayNumber; // write unary operation
     }
   }
 });
