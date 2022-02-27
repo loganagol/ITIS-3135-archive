@@ -150,10 +150,12 @@ label[for="name"] {
   font-size: larger;
 }
 
+.button-calculate,
 .key-equal {
   grid-area: 2/4/6/5;
 }
 
+.calculator-buttons,
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 25%);

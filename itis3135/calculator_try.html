@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" />
+    <title>
+      Logan Feid &loz; ITIS3135 &loz; Lemon Fish &loz; Calculator Try
+    </title>
+  </head>
+
+  <body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+      <h2>Calculator Try</h2>
+
+      <div class="calculator">
+        <div class="calculator-display">0</div>
+        <div class="calculator-buttons">
+          <button data-operation="add">&plus;</button>
+          <button data-operation="subtract">&minus;</button>
+          <button data-operation="multiply">&times;</button>
+          <button data-operation="divide">&divide;</button>
+          <button data-number="7">7</button>
+          <button data-number="8">8</button>
+          <button data-number="9">9</button>
+          <button data-number="4">4</button>
+          <button data-number="5">5</button>
+          <button data-number="6">6</button>
+          <button data-number="1">1</button>
+          <button data-number="2">2</button>
+          <button data-number="3">3</button>
+          <button data-number="0">0</button>
+          <button data-operation="decimal">.</button>
+          <button data-operation="clear">AC</button>
+          <button class="button-calculate" data-operation="calculate">
+            &equals;
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/htmlinclude.js"></script>
+    <script src="scripts/calculator_try.js"></script>
+  </body>
+</html>
