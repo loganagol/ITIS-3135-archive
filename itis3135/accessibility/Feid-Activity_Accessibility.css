@@ -12,13 +12,15 @@ html {
 header,
 h2 {
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #262626;
+  color: antiquewhite;
+  border: 5px solid antiquewhite;
 }
 
 h1 {
   font-size: 60px;
   padding-top: 20px;
-
 }
 
 /* font size */
@@ -31,21 +33,18 @@ body {
 td,
 th {
   border: 1px solid black;
-
   padding: 8px;
-  background-color:#262626;
-  color:powderblue;
+  background-color: #262626;
+  color: powderblue;
   text-align: left;
-  
 }
 
 th {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: left;
-  background-color:#262626;
- 
-  color:black;
+  background-color: #262626;
+  color: antiquewhite;
 }
 
 table.center {
@@ -58,9 +57,9 @@ form {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  color:black;
+  color: black;
+  color: antiquewhite;
 }
-
 
 /* footer bottom of page*/
 footer {
@@ -68,12 +67,10 @@ footer {
   bottom: 0;
   right: 0;
   padding-right: 70px;
- 
 }
 
 abbr {
   text-decoration: none;
-
 }
 
 /* whitespace */
@@ -92,4 +89,12 @@ abbr {
   cursor: pointer;
 }
 
+table img {
+  height: 100px;
+  width: 150px;
+}
 
+input[type="submit"] {
+  background-color: #262626;
+  color: antiquewhite;
+}
