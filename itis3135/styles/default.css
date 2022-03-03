@@ -164,3 +164,8 @@ label[for="name"] {
   grid-template-columns: repeat(4, 25%);
   background: #6a040f;
 }
+
+#validation_link_html,
+#validation_link_css {
+  text-decoration: none;
+}
