@@ -1,5 +1,5 @@
-const people = [];
-const salaries = [];
+const people = ["Clark Kent", "Bruce Wayne", "Diana Prince"];
+const salaries = [40000, 3000000, 50000];
 
 function addSalary() {
   console.log("! called addSalary()");
