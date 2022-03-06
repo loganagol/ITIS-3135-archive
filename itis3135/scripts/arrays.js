@@ -6,6 +6,31 @@ function addSalary() {
 }
 function displayResults() {
   console.log("! called displayResults()");
+
+  salaryAvg = 0;
+  salaryMax = 0;
+  salaryMaxIndex = 0;
+
+  for (let i = 0; i < people.length; i++) {
+    salaryAvg += salaries[i];
+
+    if (salaries[i] > salaryMax) {
+      salaryMax = salaries[i];
+      salaryMaxIndex = i;
+    }
+  }
+  salaryAvg = salaryAvg / people.length;
+
+  let messageAvg = "Average salary is $" + salaryAvg + ".";
+  let messageMax =
+    "The highest paid employee is " +
+    people[salaryMaxIndex] +
+    " with a salary of $" +
+    salaryMax +
+    ".";
+
+  document.getElementById("results").innerHTML =
+    "<h3>Results</h3><p>" + messageAvg + "</p>" + "<p>" + messageMax + "</p>";
 }
 function displaySalary() {
   console.log("! called displaySalary");
