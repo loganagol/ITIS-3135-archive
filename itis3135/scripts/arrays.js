@@ -22,8 +22,8 @@ function addSalary() {
       console.log("! changed salary");
     }
   }
-  displayResults();
-  displaySalary();
+//   displayResults();
+//   displaySalary();
 
   document.getElementById("employees").focus();
 }
