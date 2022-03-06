@@ -34,6 +34,15 @@ function displayResults() {
 }
 function displaySalary() {
   console.log("! called displaySalary");
+
+  let returnHTML = "<table><tr><th>Name</th><th>Salary</th></tr>";
+  for (let i = 0; i < people.length; i++) {
+    returnHTML +=
+      "<tr> <td>" + people[i] + "</td> <td>$" + salaries[i] + "</td> </tr>";
+  }
+  returnHTML = returnHTML + "</table>";
+
+  document.getElementById("results_table").innerHTML = returnHTML;
 }
 
 const buttonAddSalary = document.querySelector("#buttonAddSalary");
