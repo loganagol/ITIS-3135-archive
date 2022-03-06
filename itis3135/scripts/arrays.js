@@ -1,8 +1,31 @@
-const people = ["Clark Kent", "Bruce Wayne", "Diana Prince"];
-const salaries = [40000, 3000000, 50000];
+let people = ["Clark Kent", "Bruce Wayne", "Diana Prince"];
+let salaries = [40000, 3000000, 50000];
 
 function addSalary() {
   console.log("! called addSalary()");
+
+  let mysalary = document.getElementById("salary").value;
+  //   console.log(mysalary);
+
+  if (!mysalary || isNaN(mysalary) || mysalary < 0) {
+    alert("Invalid input, please enter a number greater than zero.");
+    return;
+  }
+  mysalary = parseFloat(mysalary);
+
+  let myemployee = document.getElementById("employees").value;
+  //   console.log(myemployee);
+
+  for (let i = 0; i < people.length; i++) {
+    if (people[i] === myemployee) {
+      salaries[i] = mysalary;
+      console.log("! changed salary");
+    }
+  }
+  displayResults();
+  displaySalary();
+
+  document.getElementById("employees").focus();
 }
 function displayResults() {
   console.log("! called displayResults()");
@@ -35,7 +58,8 @@ function displayResults() {
 function displaySalary() {
   console.log("! called displaySalary");
 
-  let returnHTML = "<table><tr><th>Name</th><th>Salary</th></tr>";
+  let returnHTML =
+    "<h3>Salaries</h3><table><tr><th>Name</th><th>Salary</th></tr>";
   for (let i = 0; i < people.length; i++) {
     returnHTML +=
       "<tr> <td>" + people[i] + "</td> <td>$" + salaries[i] + "</td> </tr>";
@@ -60,3 +84,5 @@ buttonDisplayResults.addEventListener("click", (e) => {
 buttonDisplaySalary.addEventListener("click", (e) => {
   displaySalary();
 });
+
+document.getElementById("employees").focus();
