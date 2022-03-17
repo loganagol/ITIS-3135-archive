@@ -1,0 +1,52 @@
+/** 
+https://coolors.co/palette/5603ad-8367c7-b3e9c7-c2f8cb-f0fff1 
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Hubballi");
+
+:root {
+  --purpledark: #5603ad;
+  --purplelight: #8367c7;
+  --greendark: #b3e9c7;
+  --greenlight: #c2f8cb;
+  /* --greenlight: #f0fff1; */
+}
+
+body {
+  font-family: 'Hubballi';
+  color: var(--purpledark);
+  background-color: var(--greenlight);
+
+  margin-left: 125px;
+  margin-right: 125px;
+}
+
+nav {
+  background-color: var(--greendark);
+  text-align: center;
+  border: 1px solid var(--purplelight);
+  padding: 5px;
+}
+
+header,
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purpledark);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
