@@ -13,7 +13,7 @@ https://coolors.co/palette/5603ad-8367c7-b3e9c7-c2f8cb-f0fff1
 }
 
 body {
-  font-family: 'Hubballi';
+  font-family: 'Hubballi', serif;
   color: var(--purpledark);
   background-color: var(--greenlight);
 
