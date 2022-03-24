@@ -79,15 +79,51 @@ a:hover {
 
 #container-description ul.active {
   display: block;
+  float: right;
 }
 
-figure {
+#slideshow {
   margin: auto;
-  width: 1000px;
-  height: 200px;
+}
+
+#slideshow-images {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#slideshow-images li {
+  display: inline;
+}
+
+.slideshow-image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#content {
+  display: flex;
+  width: 100%;
+}
+
+#content-child {
+  flex: 1;
+  text-align: right;
+  margin: 10px;
+}
+
+#content-child:nth-child(2) {
+  display: flex;
+  flex: 1;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+#slideshow-image-main {
+  max-width: 500px;
+  max-height: 500px;
 }
 
 main * {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
   outline-offset: 10px;
 }
