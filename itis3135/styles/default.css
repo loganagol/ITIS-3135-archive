@@ -196,5 +196,5 @@ label[for="name"] {
   text-align: center;
   max-width: 75%;
   max-height: 75%;
-  border: 10px solid red;
+  /* border: 10px solid red; */
 }
