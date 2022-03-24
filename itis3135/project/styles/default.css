@@ -72,3 +72,11 @@ a:hover {
 .input-year.active {
   background-color: var(--purpledark);
 }
+
+.description-container {
+  visibility: hidden;
+}
+
+.description-container .active {
+  visibility: visible;
+}
