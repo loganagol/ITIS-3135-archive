@@ -50,3 +50,25 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.input-container {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.input-year {
+  background-color: var(--purplelight);
+  border: 2px solid var(--purpledark);
+  border-radius: 50%;
+  color: var(--greenlight);
+  display: inline-block;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  margin: 5px;
+}
+
+.input-year.active {
+  background-color: var(--purpledark);
+}
