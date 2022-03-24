@@ -1,12 +1,12 @@
-$(document).ready(() => {
+$(document).ready(function() {
     console.log("! document ready");
 
-    $(".slideshow-images a").each(() => {
+    $(".slideshow-images a").each(function() {
         let swappedImage = new Image();
         swappedImage.src = $(this).attr("href");
     });
 
-    $(".slideshow-images a").click((event) => {
+    $(".slideshow-images a").click(function(event) {
         console.log("! image clicked");
 
         event.preventDefault();
