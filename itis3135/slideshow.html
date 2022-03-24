@@ -4,16 +4,51 @@
     <meta charset="UTF-8" />
     <link href="styles/default.css" rel="stylesheet" type="text/css" />
     <title>Logan Feid &loz; ITIS3135 &loz; Lemon Fish &loz; Slideshow</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
 
   <body>
     <div data-include="components/header.html"></div>
+
     <main>
       <h2>Slideshow</h2>
-      <p>
-          
-      </p>
+      <ul class="slideshow-images">
+        <li>
+          <a href="images/trip_1.jpg" title="St Louis Bridge">
+            <img class="slideshow-img" src="images/trip_1.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/trip_2.jpg" title="Nebraska Plains">
+            <img class="slideshow-img" src="images/trip_2.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/trip_3.jpg" title="Utah Canyons">
+            <img class="slideshow-img" src="images/trip_3.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/trip_4.jpg" title="The Road to Delta">
+            <img class="slideshow-img" src="images/trip_4.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/trip_5.jpg" title="Sevier Lakebed">
+            <img class="slideshow-img" src="images/trip_5.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/trip_6.jpg" title="Basin Sunrise">
+            <img class="slideshow-img" src="images/trip_6.jpg" alt="" />
+          </a>
+        </li>
+      </ul>
+
+      <h3 id="caption">St Louis Bridge</h3>
+      <p><img id="image-main" src="images/trip_1.jpg" alt="" /></p>
     </main>
+
     <div data-include="components/footer.html"></div>
     <script src="scripts/htmlinclude.js"></script>
   </body>

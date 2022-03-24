@@ -169,3 +169,32 @@ label[for="name"] {
 #validation_link_css {
   text-decoration: none;
 }
+
+.slideshow-img {
+  max-width: 10vw;
+  max-width: 10vw;
+}
+
+.slideshow-images {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.slideshow-images li {
+  display: inline;
+}
+
+.slideshow-images li a {
+  text-decoration: none;
+}
+
+#image-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 75%;
+  max-height: 75%;
+  border: 10px solid red;
+}
