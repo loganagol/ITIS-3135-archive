@@ -51,7 +51,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.input-container {
+.timeline {
   text-align: center;
 }
 
@@ -73,15 +73,18 @@ a:hover {
   background-color: var(--purpledark);
 }
 
-.description-container ul {
+#container-description ul {
   display: none;
 }
 
-.description-container ul.active {
+#container-description ul.active {
   display: block;
 }
 
 figure {
+  margin: auto;
+  width: 1000px;
+  height: 200px;
 }
 
 main * {

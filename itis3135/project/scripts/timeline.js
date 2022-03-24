@@ -7,7 +7,7 @@ inputs.forEach((el) =>
     inputs.forEach((el) => el.classList.remove("active"));
     el.classList.add("active");
 
-    let currentActive = document.querySelectorAll(".description-container ul");
+    let currentActive = document.querySelectorAll("#container-description ul");
     currentActive.forEach((el) => el.classList.remove("active"));
 
     let year = el.innerHTML;
