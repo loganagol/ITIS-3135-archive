@@ -52,7 +52,6 @@ a:hover {
 }
 
 .input-container {
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -69,14 +68,23 @@ a:hover {
   margin: 5px;
 }
 
-.input-year.active {
+.input-year.active,
+.input-year:hover {
   background-color: var(--purpledark);
 }
 
-.description-container {
-  visibility: hidden;
+.description-container ul {
+  display: none;
 }
 
-.description-container .active {
-  visibility: visible;
+.description-container ul.active {
+  display: block;
+}
+
+figure {
+}
+
+main * {
+  border: 1px dotted red;
+  outline-offset: 10px;
 }
