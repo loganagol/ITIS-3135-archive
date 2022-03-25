@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <link href="styles/default.css" rel="stylesheet" type="text/css" />
     <title>Wonderful Wirehairs &loz; Meet a Wirehair &loz; Newt</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
+
   <body>
     <header>
       <h1>Wonderful Wirehairs</h1>
@@ -20,44 +22,88 @@
         <span class="input-year">2022</span>
       </div>
 
-      <figure>
-        <img src="" alt="" />
-        <figcaption>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum,
-          accusamus alias, nostrum odio reiciendis incidunt, laborum accusantium
-          nesciunt aliquam quibusdam voluptates? Dolor tenetur obcaecati nulla
-          fuga facilis qui reiciendis!
-        </figcaption>
-      </figure>
+      <div id="content">
+        <div id="content-child">
+          <img
+            id="slideshow-image-main"
+            src="images/newt/F4C17813.jpeg"
+            alt=""
+          />
+        </div>
+        <div id="content-child">
+          <div id="container-description">
+            <ul id="2020" class="active">
+              <li>Canine Good Citizen CGC - December 6, 2020</li>
+              <li>Community Canine CGCA - December 6, 2020</li>
+              <li>Urban Canine Good Citizen CGCU - December 6, 2020</li>
+            </ul>
 
-      <div id="container-description">
-        <ul id="2020" class="active">
-          <li>Canine Good Citizen CGC - December 6, 2020</li>
-          <li>Community Canine CGCA - December 6, 2020</li>
-          <li>Urban Canine Good Citizen CGCU - December 6, 2020</li>
-        </ul>
+            <ul id="2021">
+              <li>Trick Dog Novice TKN - February 25, 2021</li>
+              <li>Farm Dog Certified FDC - May 1, 2021</li>
+              <li>Rally Novice RN - May 8, 2021</li>
+              <li>Trick Dog Intermediate TKI - July 3, 2021</li>
+              <li>Trick Dog Advanced TKA - July 4, 2021</li>
+              <li>Trick Dog Performer TKP - July 5, 2021</li>
+              <li>Trick Dog Elite Performer TKE - July 6, 2021</li>
+              <li>Beginner Novice BN - July 18, 2021</li>
+              <li>Champion CH - September 20, 2021</li>
+              <li>Junior Hunter JH - October 4, 2021</li>
+              <li>BCAT - October 23, 2021</li>
+              <li>Coursing Ability CA - October 24, 2021</li>
+              <li>Companion Dog CD - December 11, 2021</li>
+            </ul>
 
-        <ul id="2021">
-          <li>Trick Dog Novice TKN - February 25, 2021</li>
-          <li>Farm Dog Certified FDC - May 1, 2021</li>
-          <li>Rally Novice RN - May 8, 2021</li>
-          <li>Trick Dog Intermediate TKI - July 3, 2021</li>
-          <li>Trick Dog Advanced TKA - July 4, 2021</li>
-          <li>Trick Dog Performer TKP - July 5, 2021</li>
-          <li>Trick Dog Elite Performer TKE - July 6, 2021</li>
-          <li>Beginner Novice BN - July 18, 2021</li>
-          <li>Champion CH - September 20, 2021</li>
-          <li>Junior Hunter JH - October 4, 2021</li>
-          <li>BCAT - October 23, 2021</li>
-          <li>Coursing Ability CA - October 24, 2021</li>
-          <li>Companion Dog CD - December 11, 2021</li>
-        </ul>
-
-        <ul id="2022">
-          <li>Rally Advanced RA - February 5, 2022</li>
-          <li>Senior Hunter SH - March 13, 2022</li>
-        </ul>
+            <ul id="2022">
+              <li>Rally Advanced RA - February 5, 2022</li>
+              <li>Senior Hunter SH - March 13, 2022</li>
+            </ul>
+          </div>
+        </div>
       </div>
+
+      <ul id="slideshow-images">
+        <li>
+          <a href="images/newt/4F3C04EF.jpeg">
+            <img class="slideshow-image" src="images/newt/4F3C04EF.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/9F39C8B7.jpeg">
+            <img class="slideshow-image" src="images/newt/9F39C8B7.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/95B41A5B.jpeg">
+            <img class="slideshow-image" src="images/newt/95B41A5B.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/A1ADF59E.jpeg">
+            <img class="slideshow-image" src="images/newt/A1ADF59E.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/A2BD3FDE.jpeg">
+            <img class="slideshow-image" src="images/newt/A2BD3FDE.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/A8750F0D.jpeg">
+            <img class="slideshow-image" src="images/newt/A8750F0D.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/CE14F19D.jpeg">
+            <img class="slideshow-image" src="images/newt/CE14F19D.jpeg" />
+          </a>
+        </li>
+        <li>
+          <a href="images/newt/F4C17813.jpeg">
+            <img class="slideshow-image" src="images/newt/F4C17813.jpeg" />
+          </a>
+        </li>
+      </ul>
     </main>
 
     <footer>
@@ -66,5 +112,6 @@
 
     <script src="scripts/htmlinclude.js"></script>
     <script src="scripts/timeline.js"></script>
+    <script src="scripts/slideshow.js"></script>
   </body>
 </html>

@@ -122,7 +122,35 @@ a:hover {
 #slideshow-image-main {
   max-width: 600px;
   max-height: 600px;
+  /* max-width: 100%;
+  max-height: 100%; */
   border: 5px groove var(--purpledark);
+  border-radius: 1%;
+}
+
+#content-home {
+  display: flex;
+  width: 100%;
+}
+
+.content-home-child {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 2px groove var(--purpledark);
+  border-radius: 1%;
+}
+
+#content-home img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 5px groove var(--purpledark);
+  border-radius: 1%;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
 }
 
 main * {
