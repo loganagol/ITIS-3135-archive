@@ -16,7 +16,8 @@ body {
   font-family: "Hubballi", serif;
   color: var(--purpledark);
   background-color: var(--greenlight);
-
+  font-size: larger;
+  /* font-weight: 600; */
   margin-left: 125px;
   margin-right: 125px;
 }
@@ -44,7 +45,7 @@ h3 {
 a {
   text-decoration: none;
   color: var(--purpledark);
-  font-weight: bold;
+  font-weight: 900;
 }
 
 a:hover {
