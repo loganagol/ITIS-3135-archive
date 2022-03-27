@@ -3,4 +3,46 @@
   &diams;
   <a href="https://www.facebook.com/ServiceDogNewt/">Newt's&nbsp;Facebook</a>
 </nav>
-<p>Designed by Feid Functions &copy; 2022</p>
+<p>
+  Website Design by Feid Functions &copy; 2022
+</p>
+<p>
+  <a
+    href="https://validator.w3.org/check?uri=referer"
+    id="validation_link_html"
+    style="text-decoration: none;"
+  >
+    <img
+      src="images/button_validation_html5.png"
+      width="88"
+      height="31"
+      alt="Link to HTML validator"
+    />
+  </a>
+  <a
+    href="https://jigsaw.w3.org/css-validator/check/referer"
+    id="validation_link_css"
+    style="text-decoration: none;"
+  >
+    <img
+      src="images/button_validation_css.png"
+      width="88"
+      height="31"
+      alt="Link to CSS validator"
+    />
+  </a>
+</p>
+<script>
+  document
+    .getElementById("validation_link_html")
+    .setAttribute(
+      "href",
+      "https://validator.w3.org/check?uri=" + location.href
+    );
+  document
+    .getElementById("validation_link_css")
+    .setAttribute(
+      "href",
+      "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+    );
+</script>
