@@ -25,8 +25,53 @@ body {
 nav {
   background-color: var(--greendark);
   text-align: center;
-  border: 1px solid var(--purplelight);
-  padding: 5px;
+  border: 2px solid var(--purplelight);
+  /* border-radius: 5%; */
+
+  /*
+  https://www.magicpattern.design/tools/css-backgrounds
+  */
+  background-size: 15px 15px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--purpledark) 0,
+    var(--purpledark) 1.3px,
+    var(--greendark) 0,
+    var(--greendark) 50%
+  );
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+  border-right: 1px solid var(--purpledark);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--greenlight);
+}
+
+nav li:nth-child(1) {
+  border-left: 1px solid var(--purpledark);
+}
+
+nav li:hover {
+  background-color: var(--purpledark);
+}
+
+nav a {
+  text-decoration: none;
+  padding: 30px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--greenlight);
 }
 
 header,
@@ -42,13 +87,13 @@ h3 {
   text-align: center;
 }
 
-a {
+main a {
   text-decoration: none;
   color: var(--purpledark);
   font-weight: 900;
 }
 
-a:hover {
+main a:hover {
   text-decoration: underline;
 }
 
@@ -139,14 +184,14 @@ a:hover {
   margin: 10px;
   padding: 10px;
   border: 2px groove var(--purpledark);
-  border-radius: 1%;
+  /* border-radius: 1%; */
 }
 
 #content-home img {
   max-width: 100%;
   max-height: 100%;
   border: 5px groove var(--purpledark);
-  border-radius: 1%;
+  /* border-radius: 1%; */
 }
 
 figcaption {
