@@ -20,12 +20,13 @@ $(document).ready(function () {
   // set up the event handlers for each link
   $("ul li a").click(function (evt) {
     console.log("! image clicked");
+
     let imagePath = $(this).attr("href");
     let caption = $(this).attr("title");
 
-    // Then add statements that fade the caption and image out over a
-    // duration of three seconds.
-    $("#caption").animate({ fontSize: "1em" }, 3000, function () {
+    $("#caption").animate({ fontSize: "1em" }, 1000, function () {
+      // Then add statements that fade the caption and image out over a
+      // duration of three seconds.
       $("#image").fadeOut(3000, function () {
         $("#image").attr("src", imagePath);
         $("#image").fadeIn(3000);
