@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+
     <title>Supplemental Iron</title>
     <style>
       /*
@@ -20,6 +22,7 @@
 
       body {
         font-family: "Permanent Marker", Courier, monospace;
+        /* font-family: Courier, monospace; */
         color: var(--dark);
         background-color: var(--light);
 
@@ -29,8 +32,43 @@
 
       nav {
         text-align: center;
-        border: 1px solid var(--dark);
-        padding: 5px;
+        border: 2px solid var(--dark);
+        font-weight: bold;
+        background-color: var(--dark);
+      }
+
+      nav ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+      }
+
+      nav li {
+        background-color: var(--light);
+        display: inline;
+        border-right: 2px solid var(--dark);
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      nav li:nth-child(1) {
+        border-left: 2px solid var(--dark);
+      }
+
+      nav li:hover {
+        background-color: var(--dark);
+        color: var(--light);
+      }
+
+      nav .active {
+        background-color: var(--darkorange);
+        color: var(--light);
       }
 
       header,
@@ -51,41 +89,65 @@
         text-align: center;
         line-height: 0px;
       }
+
+      main section {
+        display: none;
+      }
+
+      main section.active {
+        display: block;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Supplemental Iron</h1>
-      <nav></nav>
+      <nav>
+        <ul>
+          <li class="active">Home</li>
+          <li>About</li>
+          <li>Frequency</li>
+          <li>Locations</li>
+          <li>Benefits</li>
+          <li>Exercises</li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section id="section-home">
+      <section id="Home" class="active">
         <!-- WHO -->
+        <h2>Home</h2>
       </section>
 
-      <section id="section-about">
+      <section id="About">
         <!-- WHAT -->
+        <h2>About</h2>
       </section>
 
-      <section id="section-frequency">
+      <section id="Frequency">
         <!-- WHEN -->
+        <h2>How Often Should I Exercise</h2>
       </section>
 
-      <section id="section-locations">
+      <section id="Locations">
         <!-- WHERE -->
+        <h2>Location</h2>
       </section>
 
-      <section id="section-benefits">
+      <section id="Benefits">
         <!-- WHY -->
+        <h2>Benefits</h2>
       </section>
 
-      <section id="guide-exercises">
+      <section id="Exercises">
         <!-- HOW -->
+        <h2>Exercises</h2>
       </section>
     </main>
 
     <footer>
+      <hr />
       <p>Website Design by Feid Functions &copy; 2022</p>
       <p>
         <a
@@ -128,5 +190,24 @@
           );
       </script>
     </footer>
+
+    <script>
+      const navs = document.querySelectorAll("nav li");
+
+      navs.forEach((el) =>
+        el.addEventListener("click", (ev) => {
+          console.log("! clicked " + el.innerHTML);
+
+          navs.forEach((el) => el.classList.remove("active"));
+          el.classList.add("active");
+
+          let currentActive = document.querySelectorAll("section");
+          currentActive.forEach((el) => el.classList.remove("active"));
+
+          let section = el.innerHTML;
+          document.getElementById(section).classList.add("active");
+        })
+      );
+    </script>
   </body>
 </html>
