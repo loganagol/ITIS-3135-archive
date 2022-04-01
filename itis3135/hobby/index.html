@@ -6,12 +6,13 @@
 
     <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 
-    <title>Supplemental Iron</title>
+    <title>The Supplemental Iron</title>
     <style>
       /*
       https://coolors.co/palette/003049-d62828-f77f00-fcbf49-eae2b7
       */
       @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+      @import url("https://fonts.googleapis.com/css?family=Rubik");
 
       :root {
         --light: #f5f3f4;
@@ -26,15 +27,20 @@
         color: var(--dark);
         background-color: var(--light);
 
-        margin-left: 125px;
-        margin-right: 125px;
+        margin-left: 150px;
+        margin-right: 150px;
       }
 
       nav {
+        /* border-radius: 50%; */
         text-align: center;
         border: 2px solid var(--dark);
+        border-radius: 25px;
         font-weight: bold;
-        background-color: var(--dark);
+        /* background-color: var(--dark); */
+        background-image: url(images/knurling.jpg);
+        background-size: 50%;
+        background-position: left;
       }
 
       nav ul {
@@ -50,6 +56,8 @@
         background-color: var(--light);
         display: inline;
         border-right: 2px solid var(--dark);
+        border-top: 2px solid var(--dark);
+        border-bottom: 2px solid var(--dark);
         margin: 0;
         padding-left: 20px;
         padding-right: 20px;
@@ -97,16 +105,41 @@
       main section.active {
         display: block;
       }
+
+      section :not(h1, h2, h3, h4) {
+        font-family: "Rubik", Courier, monospace;
+      }
+
+      table {
+        /* text-align: center; */
+        /* margin: auto; */
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 5px solid var(--dark);
+        text-align: left;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      th {
+        font-weight: bold;
+        background-color: var(--dark);
+        color: var(--light);
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Supplemental Iron</h1>
+      <h1>The Supplemental Iron</h1>
       <nav>
         <ul>
           <li class="active">Home</li>
           <li>About</li>
-          <li>Frequency</li>
+          <li>Routine</li>
           <li>Locations</li>
           <li>Benefits</li>
           <li>Exercises</li>
@@ -118,6 +151,13 @@
       <section id="Home" class="active">
         <!-- WHO -->
         <h2>Home</h2>
+
+        <p>
+          Welcome to The Supplemental Iron. This is a site about strength training,
+          resistance training, weight lifting, or whatever you wish to call it.
+          It is intended to serve as a basic resource for my current gym
+          programming.
+        </p>
       </section>
 
       <section id="About">
@@ -125,9 +165,123 @@
         <h2>About</h2>
       </section>
 
-      <section id="Frequency">
+      <section id="Routine">
         <!-- WHEN -->
-        <h2>How Often Should I Exercise</h2>
+        <h2>Routine Programming</h2>
+        <p>
+          This is my current routine. It follows a basic PPL (Pull Push Legs)
+          split across multiple days of the week. This means that one day is
+          devoted to exercises where I push weight away from myself, one day is
+          for exercises where I pull weight towards myself, and one day is for
+          leg and core exercises.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Weekday</th>
+              <th>Split</th>
+              <th>Exercises</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Push</td>
+              <td>
+                <ol>
+                  <li>Overhead Press</li>
+                  <li>Incline Dumbbell Bench Press</li>
+                  <li>Close-Grip Barbell Bench Press</li>
+                  <li>Preacher Curl</li>
+                  <li>Dumbbell Raises</li>
+                  <li>Parallel Bar Dips</li>
+                  <li>Run 2 miles</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Legs</td>
+              <td>
+                <ol>
+                  <li>Barbell Squat</li>
+                  <li>Zercher Squat</li>
+                  <li>Dumbbell Step Up</li>
+                  <li>Leg Press</li>
+                  <li>Standing Calf Raises</li>
+                  <li>Crunch Machine (Slow Reps)</li>
+                  <li>Keiser Bike for 5-10 Minutes</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td><em>Rest</em></td>
+              <td>----------</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Pull</td>
+              <td>
+                <ol>
+                  <li>Deadlift OR Hex Bar Deadlift</li>
+                  <li>Bent-Over Barbell Row</li>
+                  <li>Dumbbell Shrug</li>
+                  <li>OH Iso-Lateral Row</li>
+                  <li>Lat Pulldown OR Seated Cable Pull</li>
+                  <li>Floor Face Pull</li>
+                  <li>Rowing Machine 2000 Meters</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Push</td>
+              <td>
+                <ol>
+                  <li>Flat Barbell Bench Press</li>
+                  <li>Incline Barbell Bench Press</li>
+                  <li>Seated Overhead Dumbbell Press</li>
+                  <li>Dumbbell Raises</li>
+                  <li>Preacher Curl</li>
+                  <li>Parallel Bar Dips</li>
+                  <li>Rowing Machine 2000 Meters</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Legs</td>
+              <td>
+                <ol>
+                  <li>Barbell Squat</li>
+                  <li>Zercher Squat</li>
+                  <li>Leg Press</li>
+                  <li>Dumbbell Step Ups</li>
+                  <li>Multi-Plane Calf Machine</li>
+                  <li>Weighted Crunches</li>
+                  <li>Keiser Bike 5-10 Minutes</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Pull</td>
+              <td>
+                <ol>
+                  <li>Hex Bar Deadlift</li>
+                  <li>Barbell Row</li>
+                  <li>Iso-Lateral Row (OH)</li>
+                  <li>Iso-Lateral Front Lat Pulldown</li>
+                  <li>Dumbbell Shrug</li>
+                  <li>Floor Face Pulls</li>
+                  <li>Rowing Machine 2000 Meters</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section id="Locations">
@@ -148,7 +302,9 @@
 
     <footer>
       <hr />
+
       <p>Website Design by Feid Functions &copy; 2022</p>
+
       <p>
         <a
           href="https://validator.w3.org/check?uri=referer"
@@ -175,6 +331,8 @@
           />
         </a>
       </p>
+
+      <!-- This script sends the correct referer location. -->
       <script>
         document
           .getElementById("validation_link_html")
@@ -191,6 +349,7 @@
       </script>
     </footer>
 
+    <!-- This script controls hiding and showing the page sections. -->
     <script>
       const navs = document.querySelectorAll("nav li");
 
