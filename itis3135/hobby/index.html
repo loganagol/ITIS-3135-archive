@@ -34,13 +34,14 @@
       nav {
         /* border-radius: 50%; */
         text-align: center;
-        /* border: 2px solid var(--dark); */
-        border-radius: 25px;
+        border: 1px solid var(--dark);
+        /* border-radius: 25px; */
         font-weight: bold;
-        /* background-color: var(--dark); */
-        background-image: url(images/knurling.jpg);
+        background-color: var(--dark);
+
+        /* background-image: url(images/knurling.jpg);
         background-size: 50%;
-        background-position: left;
+        background-position: left; */
       }
 
       nav ul {
@@ -70,7 +71,7 @@
       }
 
       nav .active {
-        background-color: var(--dark);
+        background-color: var(--darkorange);
         color: var(--light);
       }
 
@@ -92,8 +93,7 @@
       }
 
       h1,
-      h2,
-      h3 {
+      h2 {
         text-align: center;
         line-height: 0px;
       }
@@ -106,7 +106,7 @@
         display: block;
       }
 
-      section :not(h1, h2, h3, h4) {
+      section :not(h1, h2, h3) {
         font-family: "Rubik", Courier, monospace;
       }
 
@@ -121,8 +121,8 @@
         border: 5px solid var(--dark);
         text-align: left;
         margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
       th {
@@ -130,6 +130,21 @@
         background-color: var(--dark);
         color: var(--light);
       }
+
+      a:not(.validation_link) {
+        color: var(--darkorange);
+        text-decoration: none;
+        border: 1px dotted var(--darkorange);
+        /* background-color: var(--darkorange); */
+      }
+
+      /* hr {
+        height: 15px;
+        border-radius: 25px;
+        background-image: url(images/knurling.jpg);
+        background-size: 50%;
+        background-position: left;
+      } */
     </style>
   </head>
   <body>
@@ -141,7 +156,7 @@
           <li>About</li>
           <li>Routine</li>
           <li>Locations</li>
-          <li>Benefits</li>
+          <!-- <li>Benefits</li> -->
           <li>Exercises</li>
         </ul>
       </nav>
@@ -152,17 +167,66 @@
         <!-- WHO -->
         <h2>Home</h2>
 
+        <h3>Welcome</h3>
         <p>
-          Welcome to The Supplemental Iron. This is a site about strength
-          training, resistance training, weight lifting, or whatever you wish to
-          call it. It is intended to serve as a basic resource for my current
-          gym programming.
+          Welcome to The Supplemental Iron. This site is about my weight
+          training journey throughout the years. It is intended to serve as a
+          resource for my current progress and gym programming.
         </p>
+        <p>
+          I really enjoy weightlifting, although it took me a while to really
+          get into it. It gives me self-confidence and focus, keeps me healthy,
+          and helps me sleep. I recommend it to anyone who's anxious or has
+          trouble sleeping.
+        </p>
+        <h3>Site Overview:</h3>
+        <ul>
+          <li>About: About me, my motivations and goals.</li>
+          <li>
+            Routine: My current gym program, with duration and exercise timing.
+          </li>
+          <li>Locations: Where I work out.</li>
+          <li>Exercises: The main exercises I train.</li>
+        </ul>
       </section>
 
       <section id="About">
         <!-- WHAT -->
         <h2>About</h2>
+        <h3>Getting Started</h3>
+        <p>
+          I first started resistance training in July 2016, starting off with
+          the Recommended Routine from Reddit's
+          <a href="https://www.reddit.com/r/bodyweightfitness/"
+            >r/bodyweightfitness</a
+          >. I stuck with that off and on for a long time, but I struggled with
+          discipline and progression after about a year. I had pretty much
+          stopped exercising regularly, and would only do bodyweight exercises
+          maybe once a week. I started weightlifting in March 2019 after getting
+          frustrated with my boredom and lack of progress in bodyweight
+          exercises. I was enjoying myself and progressing well until the
+          COVID-19 pandemic hit in early 2020 and closed most gyms. After
+          several months of searching through price gouged items on Facebook
+          Marketplace I found some reasonable sellers and put together a basic
+          garage gym, but lacked determination to work out regularly.
+        </p>
+
+        <p>
+          I didn't get serious or disciplined about gym time until August 2021,
+          when I went back to school to pursue my bachelor's degree and needed
+          an outlet and hobby to work off the stress. Judas Priest really helped
+          me during that time, they kept me going and my spirits up. Music has
+          continued to be a big factor in keeping me motivated and focused.
+        </p>
+
+        <h3>Motivation</h3>
+        <p>
+          My main motivation for working out is to reduce anxiety and help me
+          sleep. I have chronic issues with falling asleep and a combination of
+          weight training and cardio nearly fixes them. As long as I stay
+          disciplined I can sleep soundly at night. I'm also kind of a nerdy,
+          skinny guy and I enjoy the self confidence that comes from bulking up.
+        </p>
       </section>
 
       <section id="Routine">
@@ -174,6 +238,12 @@
           devoted to exercises where I push weight away from myself, one day is
           for exercises where I pull weight towards myself, and one day is for
           leg and core exercises.
+        </p>
+
+        <p>
+          It's a lot of work, and I'm thinking of adding in a second rest day.
+          When I first started out I ran a "bro split" with more minimal daily
+          workouts, which has influenced my current schedule.
         </p>
 
         <table>
@@ -287,12 +357,15 @@
       <section id="Locations">
         <!-- WHERE -->
         <h2>Location</h2>
+
+        <h3>UREC</h3>
+        <h3>Belk Gym</h3>
+        <h3>My Garage</h3>
       </section>
 
-      <section id="Benefits">
-        <!-- WHY -->
+      <!-- <section id="Benefits">
         <h2>Benefits</h2>
-      </section>
+      </section> -->
 
       <section id="Exercises">
         <!-- HOW -->
@@ -303,13 +376,17 @@
     <footer>
       <hr />
 
-      <p>Website Design by Feid Functions &copy; 2022</p>
+      <p>
+        Website Design by
+        <a href="../feidfunctions.com/index.html">Feid Functions</a> &copy; 2022
+      </p>
 
       <p>
         <a
           href="https://validator.w3.org/check?uri=referer"
           id="validation_link_html"
           style="text-decoration: none"
+          class="validation_link"
         >
           <img
             src="../images/button_validation_html5.png"
@@ -322,6 +399,7 @@
           href="https://jigsaw.w3.org/css-validator/check/referer"
           id="validation_link_css"
           style="text-decoration: none"
+          class="validation_link"
         >
           <img
             src="../images/button_validation_css.png"
