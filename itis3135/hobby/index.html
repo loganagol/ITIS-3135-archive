@@ -138,6 +138,29 @@
         /* background-color: var(--darkorange); */
       }
 
+      #Exercises #images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      #Exercises figure {
+        margin: auto;
+        text-align: center;
+        flex-basis: 30%;
+        margin: 10px;
+      }
+
+      #Exercises figcaption {
+        text-align: left;
+      }
+
+      #Exercises img {
+        border: 2px solid var(--dark);
+        width: 100%;
+        /* height: 100%; */
+      }
+
       /* hr {
         height: 15px;
         border-radius: 25px;
@@ -359,8 +382,44 @@
         <h2>Location</h2>
 
         <h3>UREC</h3>
+        <p>
+          UREC is the University Recreation Center. Admission is free for
+          current students and there's a wide variety of equipment available.
+          They have free weights, machines, plenty of cardio equipment, and a
+          crossfit area. The variety keeps workouts interesting, which is
+          helpful for maintaining motivation.
+        </p>
+        <p>Pros:</p>
+        <ul>
+          <li>Variety</li>
+          <li>Heavy Weights</li>
+          <li>Unique Equipment</li>
+        </ul>
+
+        <p>Cons:</p>
+        <ul>
+          <li>Crowded on Weekdays</li>
+          <li>Not Enough Free Weights</li>
+          <li>Wait Time for Machines</li>
+        </ul>
+
         <h3>Belk Gym</h3>
+        <p>
+          Home of the Charlotte Lifting Club, practice times are 6-8pm on
+          Tuesday, Wednesday, and Thursday. I often go on Thursday because they
+          don't mind crashing deadlifts. Lack of crowds and plenty of weights
+          are both big a big plus, but their machines are limited, so accessory
+          exercises are a little limited. The equipment is also outdated and
+          feels about 20lbs heavier than equivalent UREC weights.
+        </p>
+
         <h3>My Garage</h3>
+        <p>
+          Limited weight selection but quiet. Good for basic compound lifts and
+          maintaining the habit. I have an adjustable bench, a barbell, and 225
+          lbs worth of iron plates. At some point I need to buy 2x more 45 lb
+          plates, and a loadable dumbbell set would be useful.
+        </p>
       </section>
 
       <!-- <section id="Benefits">
@@ -369,7 +428,99 @@
 
       <section id="Exercises">
         <!-- HOW -->
-        <h2>Exercises</h2>
+        <h2>Main Exercises I Train</h2>
+
+        <div id="images">
+          <figure>
+            <img src="./images/Dumbbell-shoulder-press-1.png" />
+            <figcaption>
+              The Overhead Press. This exercise is excellent for building the
+              shoulders. The standing version challenges the core better, while
+              the seated version offers more stability.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./images/Incline-bench-press-2.png" />
+            <figcaption>
+              The Incline Bench Press. A recent addition to my routine, this
+              exercise is good for the front delts and upper chest.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./images/Bench-press-2.png" />
+            <figcaption>
+              The Bench Press. This exercise is a classic for building the
+              chest, shoulders, biceps, and triceps.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./images/Barbell-rear-delt-row-2.png" />
+            <figcaption>
+              The Bent-Over Row. This exercise is good for building the upper
+              back. It also helps reinforce core stability when done correctly.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./images/Squats-2.png" />
+            <figcaption>
+              The Back Squat. This is probably my least favorite lift. I
+              struggle with the flexibility necessary for depth, which causes
+              some lower back issues. It's a work in progress. Good form and
+              mobility is just as important as raw strength.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./images/Romanian-deadlift-1.png" />
+            <figcaption>
+              This photo is for the Romanian Deadlift, although I usually train
+              the Conventional Deadlift. The deadlift is good for training your
+              lower back and legs.
+            </figcaption>
+          </figure>
+        </div>
+
+        <h3>Attributions to Everkinetic</h3>
+        <ul>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Dumbbell-shoulder-press-1.png"
+              >Seated Overhead Dumbbell Press</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Incline-bench-press-2.png"
+              >Incline Barbell Bench Press</a
+            >
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Bench-press-2.png"
+              >Flat Barbell Bench Press</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Barbell-rear-delt-row-2.png"
+              >Barbell Row</a
+            >
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Squats-2.png"
+              >Back Squat</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Romanian-deadlift-1.png"
+              >Romanian Deadlift</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
 
