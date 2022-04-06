@@ -3,23 +3,15 @@
  * https://coolors.co/palette/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08
  */
 
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu Mono", Courier, monospace;
   color: #ffba08;
   background-color: #03071e;
 
   margin-left: 125px;
   margin-right: 125px;
-}
-
-nav {
-  background-color: #370617;
-  text-align: center;
-  /* border: 1px solid #ffba08; */
-  border: 1px solid #dc2f02;
-  padding: 5px;
-  /* width: fit-content; */
-  /* margin: auto; */
 }
 
 header,
@@ -37,7 +29,7 @@ main {
 h1,
 h2,
 h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu Mono", Courier, monospace;
   text-align: center;
   line-height: 0px;
 }
@@ -198,3 +190,82 @@ label[for="name"] {
   max-height: 75%;
   /* border: 10px solid red; */
 }
+
+nav {
+  background-color: #370617;
+  text-align: center;
+  /* border: 1px solid #ffba08; */
+  border: 2px solid #dc2f02;
+  padding: 5px;
+  /* width: fit-content; */
+  /* margin: auto; */
+}
+
+/* NAVBAR STYLING START*/
+.navbar {
+  overflow: hidden;
+  background-color: #370617;
+  border: 2px solid #dc2f02;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.navbar > * {
+  border-right: 1px solid #dc2f02;
+  min-width: 100px;
+  /* width: 100px; */
+  /* outline-offset: 0px; */
+}
+
+.navbar > *:nth-child(1) {
+  border-left: 1px solid #dc2f02;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropdown-button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropdown-button {
+  background-color: #dc2f02;
+  color: #03071e;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #370617;
+  border: 2px solid #dc2f02;
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* NAVBAR STYLING END*/
