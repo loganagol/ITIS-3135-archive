@@ -3,8 +3,10 @@
  * https://coolors.co/palette/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08
  */
 
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu Mono", Courier, monospace;
   color: #ffba08;
   background-color: #03071e;
 
@@ -27,7 +29,7 @@ main {
 h1,
 h2,
 h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu Mono", Courier, monospace;
   text-align: center;
   line-height: 0px;
 }
@@ -207,11 +209,18 @@ nav {
   display: flex;
   align-content: center;
   justify-content: center;
+  font-weight: bold;
 }
 
 .navbar > * {
-  outline: 1px solid #dc2f02;
+  border-right: 1px solid #dc2f02;
+  min-width: 100px;
+  /* width: 100px; */
   /* outline-offset: 0px; */
+}
+
+.navbar > *:nth-child(1) {
+  border-left: 1px solid #dc2f02;
 }
 
 .navbar a {
