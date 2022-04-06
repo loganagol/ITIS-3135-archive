@@ -12,16 +12,6 @@ body {
   margin-right: 125px;
 }
 
-nav {
-  background-color: #370617;
-  text-align: center;
-  /* border: 1px solid #ffba08; */
-  border: 1px solid #dc2f02;
-  padding: 5px;
-  /* width: fit-content; */
-  /* margin: auto; */
-}
-
 header,
 footer {
   margin-top: 50px;
@@ -198,3 +188,5 @@ label[for="name"] {
   max-height: 75%;
   /* border: 10px solid red; */
 }
+
+
