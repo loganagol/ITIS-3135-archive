@@ -5,10 +5,19 @@
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 
+:root {
+  --dark: #03071E;
+  --darkred: #370617;
+  --midred: #6A040F;
+  --darkorange: #D00000;
+  --midorange: #DC2F02;
+  --light: #FFBA08;
+}
+
 body {
   font-family: "Ubuntu Mono", Courier, monospace;
-  color: #ffba08;
-  background-color: #03071e;
+  color: var(--light);
+  background-color: var(--dark);
 
   margin-left: 125px;
   margin-right: 125px;
@@ -36,13 +45,13 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #dc2f02;
+  color: var(--midorange);
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #d00000;
+  color: var(--darkorange);
 }
 
 figure {
@@ -57,28 +66,28 @@ figcaption {
 
 table {
   margin: auto;
-  border: 1px solid #ffba08;
+  border: 1px solid var(--light);
 }
 
 th,
 td {
-  border: 1px solid #ffba08;
+  border: 1px solid var(--light);
   text-align: left;
   padding: 5px;
 }
 
 table tr:nth-child(even) {
-  background-color: #6a040f;
+  background-color: var(--midred);
 }
 
 table tr:nth-child(1) {
-  background-color: #ffba08;
-  color: #03071e;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 form {
-  background-color: #ffba08;
-  color: #03071e;
+  background-color: var(--light);
+  color: var(--dark);
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -96,8 +105,8 @@ input {
 
 input[type="reset"],
 input[type="submit"] {
-  background-color: #03071e;
-  color: #ffba08;
+  background-color: var(--dark);
+  color: var(--light);
   border-radius: 5px;
 }
 
@@ -108,31 +117,31 @@ label[for="name"] {
 #form1 {
   display: flex;
   flex-direction: column;
-  /* color: #03071e;
-  background-color: #ffba08; */
-  border: 1px #dc2f02 solid;
+  /* color: var(--dark);
+  background-color: var(--light); */
+  border: 1px var(--midorange) solid;
   padding: 10px;
 }
 
 #form1 input[type="submit"] {
-  background-color: #ffba08;
-  color: #03071e;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 #fivebuttons {
   display: flex;
   flex-direction: column;
-  /* background-color: #ffba08; */
-  border: 1px #dc2f02 solid;
+  /* background-color: var(--light); */
+  border: 1px var(--midorange) solid;
   padding: 10px;
 }
 
 #fivebuttons button {
-  background-color: #ffba08;
+  background-color: var(--light);
 }
 
 .calculator {
-  border: 2px #dc2f02 solid;
+  border: 2px var(--midorange) solid;
 }
 
 .calculator-display {
@@ -154,7 +163,7 @@ label[for="name"] {
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  background: #6a040f;
+  background: var(--midred);
 }
 
 #validation_link_html,
@@ -192,10 +201,10 @@ label[for="name"] {
 }
 
 nav {
-  background-color: #370617;
+  background-color: var(--darkred);
   text-align: center;
-  /* border: 1px solid #ffba08; */
-  border: 2px solid #dc2f02;
+  /* border: 1px solid var(--light); */
+  border: 2px solid var(--midorange);
   padding: 5px;
   /* width: fit-content; */
   /* margin: auto; */
@@ -204,7 +213,7 @@ nav {
 /* NAVBAR STYLING START*/
 .navbar {
   overflow: hidden;
-  border: 2px solid #dc2f02;
+  border: 2px solid var(--midorange);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -212,22 +221,22 @@ nav {
   
   /* opacity: 0.8; */
   background-image: radial-gradient(
-    #dc2f02 0.9500000000000001px,
-    #370617 0.9500000000000001px
+    var(--midorange) 0.9500000000000001px,
+    var(--darkred) 0.9500000000000001px
     );
     background-size: 8px 8px;
   }
   
   .navbar > * {
-  background-color: #370617;
-  border-right: 1px solid #dc2f02;
+  background-color: var(--darkred);
+  border-right: 1px solid var(--midorange);
   min-width: 100px;
   /* width: 100px; */
   /* outline-offset: 0px; */
 }
 
 .navbar > *:nth-child(1) {
-  border-left: 1px solid #dc2f02;
+  border-left: 1px solid var(--midorange);
 }
 
 .navbar a {
@@ -255,15 +264,15 @@ nav {
 
 .navbar a:hover,
 .dropdown:hover .dropdown-button {
-  background-color: #dc2f02;
-  color: #03071e;
+  background-color: var(--midorange);
+  color: var(--dark);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #370617;
-  border: 2px solid #dc2f02;
+  background-color: var(--darkred);
+  border: 2px solid var(--midorange);
 }
 
 .dropdown-content a {
