@@ -204,15 +204,22 @@ nav {
 /* NAVBAR STYLING START*/
 .navbar {
   overflow: hidden;
-  background-color: #370617;
   border: 2px solid #dc2f02;
   display: flex;
   align-content: center;
   justify-content: center;
   font-weight: bold;
-}
-
-.navbar > * {
+  
+  /* opacity: 0.8; */
+  background-image: radial-gradient(
+    #dc2f02 0.9500000000000001px,
+    #370617 0.9500000000000001px
+    );
+    background-size: 8px 8px;
+  }
+  
+  .navbar > * {
+  background-color: #370617;
   border-right: 1px solid #dc2f02;
   min-width: 100px;
   /* width: 100px; */
