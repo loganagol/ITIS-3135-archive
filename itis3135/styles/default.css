@@ -298,3 +298,7 @@ nav {
 li {
   padding: 5px;
 }
+
+.highlight {
+  background-color: var(--darkred);
+}
