@@ -293,3 +293,12 @@ nav {
 .ascii {
   text-align: center;
 }
+
+.site-screenshot {
+  width: 100%;
+  border: 2px solid var(--darkorange);
+}
+
+li {
+  padding: 5px;
+}
