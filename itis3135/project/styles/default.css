@@ -213,3 +213,7 @@ main * {
   background-color: var(--purpledark);
   color: var(--greenlight);
 }
+
+.navbar-foot a{
+  width: 130px;
+}
