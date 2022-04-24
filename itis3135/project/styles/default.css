@@ -74,25 +74,14 @@ main a:hover {
 #container-description ul.active {
   display: block;
   float: right;
+  margin-top: 0px;
+  padding-right: 100px;
+  border: 2px solid var(--purpledark);
 }
 
-#slideshow {
-  margin: auto;
-}
-
-#slideshow-images {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-#slideshow-images li {
-  display: inline;
-}
-
-.slideshow-image {
-  max-width: 100px;
-  max-height: 100px;
-  border: 2px groove var(--purpledark);
+#container-description ul.active li {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #content {
@@ -106,20 +95,16 @@ main a:hover {
   margin: 10px;
 }
 
+#content-child:first-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #content-child:nth-child(2) {
   display: flex;
   flex: 1;
   text-align: left;
   flex-shrink: 0;
-}
-
-#slideshow-image-main {
-  max-width: 600px;
-  max-height: 600px;
-  /* max-width: 100%;
-  max-height: 100%; */
-  border: 5px groove var(--purpledark);
-  border-radius: 1%;
 }
 
 #content-home {
@@ -166,11 +151,6 @@ table img {
   max-height: 100%;
 }
 
-main * {
-  /* border: 1px dotted red; */
-  outline-offset: 10px;
-}
-
 .navbar {
   overflow: hidden;
   border: 2px solid var(--purpledark);
@@ -214,6 +194,16 @@ main * {
   color: var(--greenlight);
 }
 
-.navbar-foot a{
+.navbar-foot a {
   width: 130px;
 }
+
+.fotorama {
+  background-color: var(--purplelight);
+  border: 2px solid var(--purpledark);
+}
+
+/* main * {
+  border: 1px dotted red;
+  outline-offset: 10px;
+} */
