@@ -206,6 +206,7 @@ table img {
   background-color: var(--greenlight);
   border-color: var(--purpledark);
   color: var(--purpledark);
+  font-family: "Hubballi", serif;
 }
 
 .ui-accordion-header-active {
@@ -216,9 +217,10 @@ table img {
 .ui-accordion-content-active {
   background-color: var(--greendark);
   color: var(--purpledark);
+  font-family: "Hubballi", serif;
 }
 
-.facebook .content-home-child{
+.facebook .content-home-child {
   border: none;
   display: flex;
   align-content: center;
