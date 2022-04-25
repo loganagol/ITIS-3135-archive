@@ -73,9 +73,8 @@ main a:hover {
 
 #container-description ul.active {
   display: block;
-  float: right;
   margin-top: 0px;
-  padding-right: 100px;
+  padding-right: 30px;
   border: 2px solid var(--purpledark);
 }
 
@@ -104,7 +103,6 @@ main a:hover {
   display: flex;
   flex: 1;
   text-align: left;
-  flex-shrink: 0;
 }
 
 #content-home {
@@ -201,6 +199,23 @@ table img {
 .fotorama {
   background-color: var(--purplelight);
   border: 2px solid var(--purpledark);
+}
+
+.ui-accordion-header,
+.ui-accordion-header-active {
+  background-color: var(--greenlight);
+  border-color: var(--purpledark);
+  color: var(--purpledark);
+}
+
+.ui-accordion-header-active {
+  font-weight: bold;
+}
+
+.ui-accordion-content,
+.ui-accordion-content-active {
+  background-color: var(--greendark);
+  color: var(--purpledark);
 }
 
 /* main * {
